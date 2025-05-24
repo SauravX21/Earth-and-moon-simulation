@@ -22,6 +22,7 @@ for t in times:
    
     
 fig,ax=plt.subplots()
+ax.set_facecolor('black')
 ax.set_xlim(-450000,450000)
 ax.set_ylim(-450000,450000)
 ax.set_aspect('equal')
@@ -31,8 +32,8 @@ ax.set_xlabel('X in Km')
 ax.set_ylabel('Y in km')
 ax.grid(True)
 ax.scatter(0,0,color='blue',s=100,label='Earth')
-moon,=ax.plot([],[],'ro',label='moon')
-moon_trail,=ax.plot([],[],'r--',linewidth=1)
+moon,=ax.plot([],[],'wo',label='moon')
+moon_trail,=ax.plot([],[],'w--',linewidth=1)
 ax.legend()
 
 def init():
